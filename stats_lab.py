@@ -18,12 +18,12 @@ def normal_histogram(n):
 
 def uniform_histogram(n):
    data = np.random.uniform(0, 10, n)
-    plt.hist(data, bins=10)
-    plt.title("Uniform Distribution (0,10)")
-    plt.xlabel("Value")
-    plt.ylabel("Frequency")
-    plt.show()
-    return data
+   plt.hist(data, bins=10)
+   plt.title("Uniform Distribution (0,10)")
+   plt.xlabel("Value")
+   plt.ylabel("Frequency")
+   plt.show()
+   return data
 
 
 def bernoulli_histogram(n):
@@ -58,7 +58,7 @@ def sample_variance(data):
 # -----------------------------------
 
 def order_statistics(data):
-   data = np.sort(np.asarray(data))
+    data = np.sort(np.asarray(data))
 
     minimum = data[0]
     maximum = data[-1]
@@ -99,6 +99,3 @@ def covariance_matrix(x, y):
         [var_x, cov_xy],
         [cov_xy, var_y]
     ])
-
-Complete Descriptive Statistics Lab implementation
-
